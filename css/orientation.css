@@ -1,0 +1,86 @@
+#orientation2 {
+  padding:40px;
+  border-bottom
+}
+
+.orilegend {
+  width:12px;
+  height:12px;
+  float: left;
+  margin-right:12px;
+  margin-top:3px;
+  text-transform: uppercase;
+  border-radius:6px;
+  margin-bottom:25px;
+}
+
+.orientationlegend {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#orientation0A {
+  position:absolute;
+  width:70%;
+  left:15%;
+  top:150px;
+  z-index:-1;
+}
+
+.instancetitle {
+  font-size:1.43rem;
+  font-family:Wellcome;
+}
+
+#plungesection {
+  background-image:url("../images/orientation/Ebola_burial.jpg");
+}
+
+#plungetext {
+  padding-bottom:100vh;
+}
+
+#instance4 {
+  margin-top:5%;
+}
+
+#state3 {
+  padding-bottom:1000px;
+}
+
+.screenpad {
+  margin-top:175vh;
+}
+
+#opacitynone {
+  opacity:0;
+}
+
+.fadeelement {
+  transition: opacity 1s ease;
+}
+
+.disappear
+{
+  opacity: 0;
+}
+
+#religion1 {
+  background-image:url("../images/orientation/HERO_IMG_8755.jpg");
+  margin-bottom:1px;
+}
+
+#religion2 {
+  background-image:url("../images/orientation/bill-wegener-NnbFeWRDUv4-unsplash.jpg");
+  margin-bottom:1px;
+}
+
+#religion4 {
+  background-image:url("../images/orientation/HERO_15738294138_bc25cc808c_o.jpg");
+  margin-bottom:1px;
+}
+
+#religion3 {
+  background-image:url("../images/orientation/HERO_34601930341_a99500709d_5k.jpg");
+  margin-bottom:1px;
+}

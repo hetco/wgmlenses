@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+    crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://simonbjohnson.github.io/wgmtemp/public/css/site.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+     
+    <script src="https://simonbjohnson.github.io/wgmtemp/public/js/site.js"></script>
+          
+    
+    
+      
+      <link rel="stylesheet" href="https://simonbjohnson.github.io/wgmtemp/public/css/diffusion.css">
+    
+    
+    
+    
+
+
+    
+    
+    
+             
+    <title>Societal Institutions</title>
+    <style class="hub-appearance-css" type="text/css">@font-face {
+      font-family: "Wellcome";
+      src: url("https://company-57536.frontify.com/upload/screens/111957/5a6d50d5dc09c84742892af8d847d03e-1488810116.otf") format("opentype");
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Wellcome";
+        src: 
+             url("https://company-57536.frontify.com/upload/screens/111957/d63296d3a314255333d10e2d12f78044-1488810263.otf") format("opentype");
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Wellcome";
+        src: 
+             url("https://company-57536.frontify.com/upload/screens/111957/36e7bb331a742f62d3cb31e9953d8b61-1488810263.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+    }
+  </style>
+  </head>  
+  <body>
+    <div id="menucontainer" >
+      <div class="container">
+        <div class="row menubar">
+	<div class="col-md-12">
+		<p class="navs"><img src="https://simonbjohnson.github.io/wgmtemp/public//images/Wellcome_Trust_logo.svg" width="40px" /><a class="navlink" href="https://simonbjohnson.github.io/wgmtemp/public/">Home</a> | <a class="navlink" href="https://simonbjohnson.github.io/wgmtemp/public/compare/">Compare</a> | <a class="navlink" href="https://simonbjohnson.github.io/wgmtemp/public/about/">About</a></p>
+	</div>
+</div>
+      </div>
+    </div>
+    <div class="container">
+      <main id="main">
+       
+
+<div id="orientation0" class="row headerimage">
+	<div class="col-md-10 offset-md-1">
+		<img src = "../../images/diffusion/Head_Societal@2x.png" width="100%" />
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-6 offset-md-3">
+	 	<div class="lensbox">
+	    	<h3 class="lensboxtext">Societal Institutions</h3>
+	  	</div>
+		<p>29 countries out of 144 distrust scientists equally or more than other societal groups.</p>
+	</div>
+</div>
+<div id="orientation1" class="row">
+	<div class="col-md-8 offset-md-2">
+		<p class="wellcomeheader">How much or how little are different societal groups in a country trusted, and does this affect trust in scientists?<p>
+	</div>
+</div>
+<div class="row storysection">
+	<div class="col-md-6 offset-md-3 highlightbox">
+		<!--<h2>Understanding the desirability of a world shaped by science and technology for India and Bangladesh.</h2>-->
+		<p>A lack of confidence in their major societal institutions - national government, neighbours, charities and journalists may lower a person’s trust in science and scientists.</p>
+		<p>South Africa ranks in the top 20% globally for distrust in its members of society, with the government being the least trusted of all members of society (53% of citizens distrust the government). Vietnam ranks average globally for distrust in scientists, but ranks 140/144 for trust in scientists, despite having above average levels of trust in its society.</p>
+	</div>
+</div>
+<div id="diffusion2" class="row storysection">
+	<div class="col-md-8 offset-md-2">
+		<h2>Countries which show high distrust in society also show high distrust in scientists.</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-6 offset-md-3">
+		<div id="scatterplot1"></div>
+	</div>
+	<div class="col-md-3">
+		<p class="keylabel"><i class="chartlegend highincome"></i>High Income</p>
+		<p class="keylabel"><i class="chartlegend uppermiddleincome"></i>Upper Middle Income</p>
+		<p class="keylabel"><i class="chartlegend lowermiddleincome"></i>Lower Middle Income</p>
+		<p class="keylabel"><i class="chartlegend lowincome"></i>Low Income</p>
+		<p class="keylabel">Q12 In general, would you say that you trust science a lot, some, not much, or not at all?</p>
+		<p class="keylabel">Distrust in society: The mean of questions Q11A - Q11F answering not much or not all covering neighbours, government, journalists, doctors and nurses and NGOs.</p>
+	</div>
+</div>
+<div id="diffusion2" class="row storysection">
+	<div class="col-md-8 offset-md-2">
+		<h2>People’s perception of science being shaped by overall trust levels raises questions about the extent to which science is seen as an objective and non-political practise.</h2>
+	</div>
+</div>
+<div id="diffusion3" class="row">
+	<div id="viz1scale" class="col-md-10 viz offset-md-1"></div>
+	<div id="diffusion1legend" class="col-md-12 text-center"><img src="../../images/diffusion/Legend-societal_institutions-01.svg" / width="800px"></div>
+	<div id="viz1few" class="col-md-10 viz offset-md-1">
+	</div>
+	<div id="viz1" class="col-md-10 viz offset-md-1">
+	</div>
+	<div class="col-md-12">
+		<button id="viz1switch" class="btn btn-light switchbutton">See all countries</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8 offset-md-2 storysection">
+		<h2>In LMIC countries, <span class="scientists">scientists</span> (70%) are only slightly more likely to be trusted as compared with <span class="journalists">journalists</span> (64%) and <span class="nonprofits">nonprofits</span> (60%). In HIC, <span class="scientists">scientists</span> are generally more trusted (76%) and also much more likely to be trusted as compared with <span class="journalists">journalists</span> (54%).</h2>
+	</div>
+</div>
+<div id="diffusion3" class="row">
+	<div id="viz1scale" class="col-md-10 viz offset-md-1"></div>
+	<div id="diffusion1legend" class="col-md-12 text-center"><img src="../../images/diffusion/Legend-societal_institutions-01.svg" / width="800px"></div>
+	<div id="viz1bfew" class="col-md-10 viz offset-md-1">
+	</div>
+	<div id="viz1b" class="col-md-10 viz offset-md-1">
+	</div>
+	<div class="col-md-12">
+		<button id="viz1bswitch" class="btn btn-light switchbutton">See all countries</button>
+	</div>
+</div>
+<div class="row storysection">
+	<div class="col-md-8 offset-md-2">
+		<h2><span class="doctors">Doctors and nurses</span> are the least distrusted of all members of society.</h2>
+	</div>
+	<div class="col-md-2 callout">
+		<p class="keylabel"">The trust in government question was not asked in many countries.</p>
+	</div>
+</div>
+<div id="diffusion3" class="row">
+	<div id="viz1scale" class="col-md-10 viz offset-md-1"></div>
+	<div id="diffusion1legend" class="col-md-12 text-center"><img src="../../images/diffusion/Legend-societal_institutions-01.svg" / width="800px"></div>
+	<div id="viz1cfew" class="col-md-10 viz offset-md-1">
+	</div>
+	<div id="viz1c" class="col-md-10 viz offset-md-1">
+	</div>
+	<div class="col-md-12">
+		<button id="viz1cswitch" class="btn btn-light switchbutton">See all countries</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8 offset-md-2 storysection">
+		<h2>Globally, distrust <span class="neighbours">neighbours</span> (0.8) is more correlated to distrust in <span class="scientists">scientists</span> than distrust in <span class="government">government</span> (0.38).</h2>
+	</div>
+</div>
+<div id="diffusion3" class="row">
+	<div id="viz1scale" class="col-md-10 viz offset-md-1"></div>
+	<div id="diffusion1legend" class="col-md-12 text-center"><img src="../../images/diffusion/Legend-societal_institutions-01.svg" / width="800px"></div>
+	<div id="viz1dfew" class="col-md-10 viz offset-md-1">
+	</div>
+	<div id="viz1d" class="col-md-10 viz offset-md-1">
+	</div>
+	<div class="col-md-12">
+		<button id="viz1dswitch" class="btn btn-light switchbutton">See all countries</button>
+	</div>
+</div>
+<div class="row storysection casestudyrow">
+	<div class="col-md-12 diffusionlight casestudy">
+		<img class="typeicon" src = "../../images/icons/casestudy.svg" />
+		<h3>CASE STUDY</h3>
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<p class="wellcomeheader">SOUTH AFRICA</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 offset-md-2 center">
+				<h1>Of our focus countries, South Africans are amongst the most distrustful in the world (top 20%), on the measures of trust in society and science.</h1>
+				<p>South Africa showed highly correlated relationships between trust in science and trust in other members of society.</p>
+				<p>In terms of absolute numbers, the most distrusted segment of society was the national government, with 53% of people stating that they had “not much, or not trust at all” in them. </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<div id="viz2">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+	<div id="society1" class="row fullscreensectionsticky sticky">
+		<p class="footnote white">Photography by Piqsels</p>
+	</div>
+	<div class="row">
+		<div class="col-md-6 offset-md-3 stickycontent">
+			<div class="howmightwe diffusionlight proportional">
+				<img src="../../images/diffusion/Distrust_ranking_SA_01.svg" width="100%" />
+			</div>
+		</div>
+	</div>
+</div>
+<div id="diffusion5" class="row storysection">
+	<div class="col-md-6 offset-md-3">
+		<p class="maintext">We took a closer look at the key milestones of distrust in South Africa where the government politicized science at the cost of public health outcomes.</p>
+	</div>
+</div>
+<div id="diffusion6" class="row">
+	<div class="col-md-12 offset-md-0">
+		<img src="../../images/diffusion/Lenses_Layout_Diffusion_Timeline_2-small2.png" width="100%" />
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 footnotecontainer">	
+		<p class="footnote">1. Bhana, D., Morrell, R., Shefer, T., & Ngabaza, S. (2010). South African teachers' responses to teenage pregnancy and teenage mothers in schools. Culture, health & sexuality, 12(8), 871-883.</p>
+		<p class="footnote">2. Mbeki Aids denial 'caused 300,000 deaths' https://www.theguardian.com/world/2008/nov/26/aids-south-africa</p>
+		<p class="footnote">3. Sidley, P. (2000). Mbeki appoints team to look at cause of AIDS. BMJ: British Medical Journal, 320(7245), 1291.</p>
+		<p class="footnote">4. Nomandla Yako, who defied Thabo Mbeki by importing HIV medicines, has died https://www.groundup.org.za/article/nomandla-yako-who-defied-thabo-mbeki-importing-hiv-medicines-has-died/</p>
+		<p class="footnote">5. Gow, J. A. (2009). The adequacy of policy responses to the treatment needs of South Africans living with HIV (1999-2008): a case study. Journal of the international AIDS society, 12(1), 37.</p>
+		<p class="footnote">6. Chigwedere, P., Seage III, G. R., Gruskin, S., Lee, T. H., & Essex, M. (2008). Estimating the lost benefits of antiretroviral drug use in South Africa. JAIDS Journal of Acquired Immune Deficiency Syndromes, 49(4), 410-415.</p>
+		<p class="footnote">7. Watson, J. (2005). Scientists, activists sue South Africa's AIDS 'denialists'.</p>
+		<p class="footnote">8. Petersen, I., Bhana, A., Campbell-Hall, V., Mjadu, S., Lund, C., Kleintjies, S., ... & Mental Health and Poverty Research Programme Consortium. (2009). Planning for district mental health services in South Africa: a situational analysis of a rural district site. Health Policy and Planning, 24(2), 140-150.
+		<p class="footnote">9.Herman, A. A., Stein, D. J., Seedat, S., Heeringa, S. G., Moomal, H., & Williams, D. R. (2009). The South African Stress and Health (SASH) study: 12-month and lifetime prevalence of common mental disorders. South African medical journal, 99(5).</p>
+		<p class="footnote">10. http://www.safmh.org/documents/policies-and-legislations/MENTAL%20HEALTH%20POLICY%20FRAMEWORK%202013-2020.pdf</p>
+		<p class="footnote">11. Das-Munshi, J., Lund, C., Mathews, C., Clark, C., Rothon, C., & Stansfeld, S. (2016). Mental health inequalities in adolescents growing up in post-apartheid South Africa: cross-sectional survey, SHaW study. PloSone, 11(5), e0154478.</p>
+		<p class="footnote">12. https://www.gov.za/speeches/gauteng-health-terminates-life-healthcare-esidimeni-contract-21-oct-2015-0000</p>
+		<p class="footnote">13. https://theconversation.com/south-africa-isnt-managing-mental-illness-particularly-for-the-poor-50410</p>
+		<p class="footnote">14. https://www.theguardian.com/global-development/2018/oct/14/emaciated-mutilated-dead-the-mental-health-scandal-that-rocked-south-africa</p>
+	</div>
+</div>
+<div class="row storysection casestudyrow">
+	<div class="col-md-12 diffusionlight casestudy">
+		<img class="typeicon" src = "../../images/icons/casestudy.svg" />
+		<h3>CASE STUDY</h3>
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<p class="wellcomeheader">VIETNAM</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 offset-md-2 center">
+				<h1>Low distrust ≠ Trust in Vietnam</h1>
+				<p>Trust is asymmetric in Vietnam. It shows low levels of distrust in society but higher levels of distrust in science and scientists. From a global level, this level of distrust in science and scientists is average, but intriguingly, Vietnam is one of the lowest in the world for saying they trust science and scientists. They have very large proportions replying “don’t know”.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<div id="viz4">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+	<div id="society2" class="row fullscreensectionsticky sticky">
+		<p class="footnote white">Photography by Chinh Le Duc on Unsplash.</p>
+	</div>
+	<div class="row">
+		<div class="col-md-6 offset-md-3 stickycontent">
+			<div class="howmightwe diffusionlight proportional">
+				<img src="../../images/diffusion/Distrust_ranking_V_01.svg" width="100%" />
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row storysection">
+	<div id="sticky5end" class="col-md-6 offset-md-3 center highlightbox">
+		<img class="typeicon" src = "../../images/icons/key_takeaway.svg" />
+		<h3>Key Takeway</h3>
+		<p>Socio-political events and societal actors play an important role in the public perception of trust in science. Some of these events are well known - others less so. Understanding the existing landscape and contextualising interventions is necessary to ensure uptake and adoption.</p>
+	</div>
+</div>
+
+<div class="row storysection">
+	<div class="col-md-6 offset-md-3 attraction opportunity">
+		<img class="typeicon" src = "../../images/icons/opportunity.svg" />
+		<h3>Opportunity</h3>
+		<p>How might science better understand, record and account for contextual complexity?</p>
+	</div>
+</div>
+
+<div class="row storysection">
+	<div class="row">
+		<div class="col-md-8 offset-md-2 highlightbox">
+			<h3 class="lenstitle">The Lens of</h3>
+			<div class="lensbox">
+	    		<h3 class="lensboxtext">Societal Institutions</h3>
+	  		</div>
+			<h2>How much or how little are different societal groups in a country trusted, and does this affect trust in scientists?</h2>
+			<p>Negative experiences with the state, non-profits, journalists, neighbours, doctors and nurses may color the perception of science and scientists. Use this lens to understand how much or how little are the different societal groups in a country trusted, and whether this affects trust in scientists.</p>
+			<img class="legend" src="../../images/compare/Societal_Key_Icon_text.svg" width="30%" />
+		</div>
+	</div>
+</div>
+<div class="row">
+<div id="viznine" class="col-md-12">
+</div>
+</div>
+
+
+
+      </main>
+    </div>
+    <div id="menucontainer" >
+      <div class="container">
+        <div class="row menubar storysection">
+	<div class="col-md-12">
+		<p><a class="navlink" href="https://simonbjohnson.github.io/wgmtemp/public/">Home</a> | <a class="navlink" href="https://simonbjohnson.github.io/wgmtemp/public//compare/">Compare</a> | <a class="navlink" href="https://simonbjohnson.github.io/wgmtemp/public//about/">About</a></p>
+		<p>Produced by <a href="https://hetco.io/">Hetco</a> for the Wellcome Trust's Public Engagement Department</p>
+	</div>
+</div>
+      </div>
+    </div>
+     
+
+     
+
+    
+      
+      <script src="https://simonbjohnson.github.io/wgmtemp/public/data/diffusion2.js"></script>
+      
+      <script src="https://simonbjohnson.github.io/wgmtemp/public/js/icons/diffusion_icons.js"></script>
+      
+      <script src="https://simonbjohnson.github.io/wgmtemp/public/js/diffusion.js"></script>
+    
+
+    
+
+    
+
+     
+
+
+
+    
+    
+    
+    
+  </body>
+</html>

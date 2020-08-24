@@ -44,6 +44,11 @@
 	transform:translate(-20%,-375%);
 }
 
+#benefitsicon {
+	transform:translate(50%,-250%);
+	z-index:-10;
+}
+
 #futureicon {
 	transform:translate(50%,-550%);
 	z-index:-10;

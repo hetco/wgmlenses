@@ -99,6 +99,10 @@ p {
 	margin-top:60px;
 }
 
+.storysectiondouble {
+	margin-top:120px;
+}
+
 .casestudy {
 	padding-top:2rem;
 	padding-bottom:2rem;
@@ -300,6 +304,10 @@ tr {
 
 #pagetitle {
 	color:var(--highlightColor);
+}
+
+.incomeband {
+	border-bottom:1px solid #ccc;
 }
 
 /* old styling */

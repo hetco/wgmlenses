@@ -3,7 +3,7 @@ console.log(diffusionData);
 let graphWidth = $('#scatterplot1').width();
 let graphHeight = $('#scatterplot1').width();
 
-let scatterplot1 = scatterplot('#scatterplot1',diffusionData,'distrust_society_nogov','distrust_scientists',['Distrust in Society'],["Percent answering 'A lot' or 'Some' to trusting scientist in their country"],'WBI',graphWidth,graphHeight,0,60,0,60);
+let scatterplot1 = scatterplot('#scatterplot1',diffusionData,'distrust_society_nogov','distrust_scientists',['Distrust in Society'],["Percent answering 'Not much' or 'Not at all' to trusting scientist in their country"],'WBI',graphWidth,graphHeight,0,60,0,60);
 
 $(window).resize(function(){
   $('.proportional').each(function() {

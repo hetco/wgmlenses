@@ -152,6 +152,24 @@ function generateDistance(id,data,rows,columns,state,details,animate){
         });
   }
 
+
+  if(state==1){
+    var indicatorline = svg.selectAll("line5")
+        .data(data)
+      .enter().append("line")
+        .attr("class", "line")
+        .attr("x1", function(d,i) { return Math.floor(i / rows) * scale + 0.25*scale })
+        .attr("y1", function(d,i) { return (i % rows)*scale+d.circle1Y*scale/100+scale*0.15; })
+        .attr("x2", function(d,i) { 
+            return Math.floor(i / rows) * scale + 0.25*scale;
+        })
+        .attr("y2", function(d,i) { 
+          return (i % rows)*scale+scale*0.15;
+        })
+        .attr("stroke", "#3F1A13")
+        .attr("stroke-width", 2*scale/100);    
+  }
+
   let circles1 = svg.selectAll(".circle1")
       .data(data)
     .enter().append("circle")
